@@ -1,0 +1,48 @@
+.welcome-banner .card {
+    border-radius: 0px;
+}
+
+.welcome-banner h5 {
+    margin-bottom: 0px;
+    text-transform: capitalize;
+}
+
+.welcome-banner h2 {
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+
+.count-down {
+    background-color: #000;
+}
+
+.start-date {
+    background-color: #EFB1C8;
+    height: 80px;
+    text-align: center;
+}
+
+.start-date .card-title {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.count-down-timer {
+    background-color: #743778;
+    height: 160px;
+}
+
+.about-banner .card {
+    background-color: rgba(0,0,0,0.6);
+    margin: 30px 0px 30px 0px;
+    color: #fff;
+    text-align: justify;
+}
+
+.standout-text{
+    font-weight: 600;
+}
+.imgz {
+    max-width: 100%;
+    height: auto;
+}
