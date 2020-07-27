@@ -16,11 +16,11 @@ const Footer = () => {
                                 <h4>Quick Links</h4>
                                 <div className="explore-links">
                                     <ul>
-                                        <li><Link to="#">Home</Link></li>
-                                        <li><Link to="#">Photos</Link></li>
-                                        <li><Link to="#">Location</Link></li>
-                                        <li><Link to="#">Riders</Link></li>
-                                        <li><Link to="#">Contest</Link></li>
+                                        <li><Link to="/">Home</Link></li>
+                                        <li><Link to="/photos">Photos</Link></li>
+                                        <li><Link to="/locations">Location</Link></li>
+                                        <li><Link to="/riders">Riders</Link></li>
+                                        <li><Link to="/contest">Contest</Link></li>
                                     </ul>
                                 </div>
                             </div>
