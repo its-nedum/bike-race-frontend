@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styles/home.css'
+import Timer from '../helpers/timer'
 import bike from '../../images/bike.jpg'
 
 const Home = () => {
@@ -26,10 +27,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="row count-down-timer">
-                            <div class="text-center">
-                                <h5 class="card-title"> 2</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Months</h6>
-                            </div>
+                            <Timer />
                         </div>
                     </div>
                 </div>
