@@ -11,13 +11,13 @@ const Timer = () => {
     let interval = useRef();
 
     const startTimer = () => {
-        const countdownDate = new Date('August 17, 2020 00:00:00').getTime();
+        const countdownDate = new Date('April 1, 2021 00:00:00').getTime();
 
         interval = setInterval(() => {
             const now = new Date().getTime();
             const distance = countdownDate - now;
 
-            const months = Math.floor(distance / (1000 * 60 * 60 * 12));
+            const months = '00';
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) /(1000 * 60));
@@ -28,6 +28,7 @@ const Timer = () => {
                 clearInterval(interval.current)
             } else {
                 // update timer
+                setTimerMonths(months)
                 setTimerDays(days);
                 setTimerHours(hours);
                 setTimerMinutes(minutes);
@@ -54,7 +55,7 @@ const Timer = () => {
                 </div> */}
                 <div>
                     <section>
-                        <p>87</p>
+                        <p>{timerMonths}</p>
                         <p><small>Months</small></p>
                     </section>
                     <span>:</span>
