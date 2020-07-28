@@ -106,25 +106,25 @@ const Riders = () => {
                                 <td>Brashear</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>15</td>
+                                <td>Katie</td>
+                                <td>Dunlap</td>
+                                <td>Marion</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>16</td>
+                                <td>Leo</td>
+                                <td>Howard</td>
+                                <td>Dallas</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>17</td>
+                                <td>Maria</td>
+                                <td>Baisden</td>
+                                <td>Raleigh</td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td>18</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
