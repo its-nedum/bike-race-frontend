@@ -41,6 +41,7 @@ const Timer = () => {
     useEffect(() => {
         startTimer();
         return () => {
+            // eslint-disable-next-line
             clearInterval(interval.current)
         }
     });
