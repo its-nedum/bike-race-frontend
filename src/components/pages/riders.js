@@ -64,22 +64,22 @@ const Riders = () => {
                                 <td>Baltimore</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>8</td>
+                                <td>Tara</td>
+                                <td>Taylor</td>
+                                <td>Minneapolis</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>9</td>
+                                <td>Alejandro</td>
+                                <td>Smith</td>
+                                <td>Scarborough</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>10</td>
+                                <td>Tricia</td>
+                                <td>Renshaw</td>
+                                <td>Mystic</td>
                             </tr>
                         </tbody>
                     </table>
