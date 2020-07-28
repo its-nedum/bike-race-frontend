@@ -22,8 +22,8 @@ const Home = () => {
                     <div className="col-md-8"></div>
                     <div className="col-sm-12 col-md-4 count-down">
                         <div className="row start-date">
-                            <div class="text-center">
-                                <h5 class="card-title">Thursday, April 1, 2021</h5>
+                            <div className="text-center">
+                                <h5 className="card-title">Thursday, April 1, 2021</h5>
                             </div>
                         </div>
                         <div className="row count-down-timer">
