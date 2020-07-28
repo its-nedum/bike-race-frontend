@@ -1,6 +1,7 @@
 import React from 'react'
 import Images from '../helpers/images.js'
 import Pagination from '../helpers/pagination.js'
+import '../../styles/photos.css'
 
 const Photos = () => {
     return (
