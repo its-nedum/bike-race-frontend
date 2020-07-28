@@ -15,7 +15,7 @@ const Contest = () => {
                     <div className="col-sm-12 col-md-6">
                         <form className="contest-form mt-5">
                         <h3>Submit Your Slogan</h3>
-                        <p>You think you have a perfect slogan for this year's edition? Lets' hear it.</p>
+                        <p>You think you have the perfect slogan for this year's edition? Lets' hear it.</p>
                         <div className="row">
                             <div className="col-sm-12 col-md-6 input-group mb-3">   
                                 <div className="input-group-prepend">
@@ -36,7 +36,7 @@ const Contest = () => {
                                 <div className="input-group-prepend">
                                     <span className="input-group-text" id="basic-addon1"><span className="fas fa-envelope"></span></span>
                                 </div>
-                            <input type="email" className="form-control" placeholder="Email" aria-label="email" aria-describedby="basic-addon1" />
+                            <input type="email" className="form-control" placeholder="Email Address" aria-label="email" aria-describedby="basic-addon1" />
                             </div>
                         </div>
                         <div className="row">
