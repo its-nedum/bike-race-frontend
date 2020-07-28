@@ -13,8 +13,9 @@ const Contest = () => {
                 <div className="row">
                     <div className="col-md-3"></div>
                     <div className="col-sm-12 col-md-6">
-                        <form className="contest-form">
+                        <form className="contest-form mt-5">
                         <h3>Submit Your Slogan</h3>
+                        <p>You think you have a perfect slogan for this year's edition? Lets' hear it.</p>
                         <div className="row">
                             <div className="col-sm-12 col-md-6 input-group mb-3">   
                                 <div className="input-group-prepend">
