@@ -81,6 +81,66 @@ const Riders = () => {
                                 <td>Renshaw</td>
                                 <td>Mystic</td>
                             </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Travis</td>
+                                <td>Cook</td>
+                                <td>Twin Lakes</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Joan</td>
+                                <td>Brooks</td>
+                                <td>Norfolk</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>Joseph</td>
+                                <td>Rodgers</td>
+                                <td>Wayne</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>Matthew</td>
+                                <td>Gregson</td>
+                                <td>Brashear</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
