@@ -1,3 +1,9 @@
 .riders-card {
     border-radius: 0px;
 }
+
+.rider-title {
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px;
+}
