@@ -125,21 +125,21 @@ const Riders = () => {
                             </tr>
                             <tr>
                                 <td>18</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>Sandy</td>
+                                <td>Townsend</td>
+                                <td>Newport</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>19</td>
+                                <td>Melinda</td>
+                                <td>Stephenson</td>
+                                <td>Kahului</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>20</td>
+                                <td>Jason</td>
+                                <td>Nichols</td>
+                                <td>Alexandria</td>
                             </tr>
                         </tbody>
                     </table>
