@@ -26,7 +26,7 @@ const Footer = () => {
                             </div>
                             <div className="col-sm-12 col-md-4 mb-3">
                                 <h4>Follow Us</h4>
-                                <div class="social_links">
+                                <div className="social_links">
                                 <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><span className="fab fa-instagram"></span></a></li>
                                 <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><span className="fab fa-twitter"></span></a></li>
                                 <li><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><span className="fab fa-youtube"></span></a></li>
