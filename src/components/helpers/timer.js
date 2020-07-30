@@ -49,14 +49,9 @@ const Timer = () => {
     return (
         <section className="timer-container">
             <section className="timer">
-                {/* <div>
-                    <span className=""></span>
-                    <h2>Countdown Timer</h2>
-                    <p>it is working..</p>
-                </div> */}
                 <div>
                     <section>
-                        <p>{timerMonths}</p>
+                        <p className="count">{timerMonths}</p>
                         <p><small>Months</small></p>
                     </section>
                     <span>:</span>

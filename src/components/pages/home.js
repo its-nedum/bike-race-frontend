@@ -23,7 +23,7 @@ const Home = () => {
                     <div className="col-sm-12 col-md-4 count-down">
                         <div className="row start-date">
                             <div className="text-center">
-                                <h5 className="card-title">Thursday, April 1, 2021</h5>
+                                <h5 className="card-title">Start Date: Thursday, April 1, 2021</h5>
                             </div>
                         </div>
                         <div className="row count-down-timer">
