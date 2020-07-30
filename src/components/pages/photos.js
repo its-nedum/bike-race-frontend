@@ -6,7 +6,7 @@ import '../../styles/photos.css'
 
 const Photos = () => {
     const [photos, setPhotos] = useState([]);
-    let tag = ['bikerace','shoes']
+    let tag = 'bikerace'
     let api_key = '36d171a5b0d688aa172352df116dd6c0'
     useEffect(() => {
         axios({
@@ -20,7 +20,7 @@ const Photos = () => {
         });
     }, []);
 
-    console.log(photos)
+    // console.log(photos)
     return (
         <div>
             <div className="card photo-card">
@@ -30,7 +30,7 @@ const Photos = () => {
             </div>
 
             <div className="container-fluid">
-                <Images />
+                <Images photos={photos} />
                 <Pagination />
             </div>
         </div>

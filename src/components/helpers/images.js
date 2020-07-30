@@ -1,149 +1,20 @@
 import React from 'react'
-import bike from '../../images/bike.jpg'
 
-const Images = () => {
+const Images = ({ photos }) => {
     return (
         <div>
             <div className="row mt-3 mb-3">
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
+            {photos.length === 0 ? <p>Loading image</p> : 
+                photos && photos.map((photo) => {
+                    return(
+                        <div className="col-sm-12 col-md-3 mb-3" key={photo.id}>
+                            <img src={`https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_c.jpg`} alt="pix" className="img-fluid" />
+                        </div>
+                    )
+                })
+            }
             </div>
-            <div className="row mt-3 mb-3">
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-            </div>
-            <div className="row mt-3 mb-3">
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-            </div>
-            <div className="row mt-3 mb-3">
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-            </div>
-            <div className="row mt-3 mb-3">
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-            </div>
-            <div className="row mt-3 mb-3">
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-            </div>
-            <div className="row mt-3 mb-3">
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-            </div>
-            <div className="row mt-3 mb-3">
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-            </div>
-            <div className="row mt-3 mb-3">
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-            </div>
-            <div className="row mt-3 mb-3">
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-                <div className="col-sm-12 col-md-3">
-                    <img src={bike} alt="pix" className="img-fluid" />
-                </div>
-            </div>
+            
         </div>
     )
 }
