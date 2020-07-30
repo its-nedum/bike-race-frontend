@@ -19,6 +19,18 @@ const Photos = () => {
         });
     }, []);
 
+    // Pagination
+    const [currentPage, setCurrentPage] = useState(1);
+    const [photosPerPage] = useState(40); 
+
+    //Get current posts
+    const indexOfLastPhoto = currentPage * photosPerPage;
+    const indexOfFirstPhoto = indexOfLastPhoto - photosPerPage;
+    const currentPhotos = photos.slice(indexOfFirstPhoto, indexOfLastPhoto);
+
+    //Change page
+    const paginate = (pageNumber) => setCurrentPage(pageNumber)
+
     return (
         <div>
             <div className="card photo-card">
@@ -28,8 +40,8 @@ const Photos = () => {
             </div>
 
             <div className="container-fluid">
-                <Images photos={photos} />
-                <Pagination />
+                <Images photos={currentPhotos} />
+                <Pagination photosPerPage={photosPerPage} totalPhotos={photos.length} paginate={paginate}/>
             </div>
         </div>
     )
