@@ -6,20 +6,20 @@ import '../../styles/photos.css'
 
 const Photos = () => {
     const [photos, setPhotos] = useState([]);
-    let tag = 'bikerace'
+    let tag = ['bikerace','shoes']
     let api_key = '36d171a5b0d688aa172352df116dd6c0'
     useEffect(() => {
         axios({
             method: 'get',
             url: `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${api_key}&tags=${tag}&format=json&nojsoncallback=1`,
         }).then((response) => {
-            const { data } = response;
-            setPhotos(data)
+            const { page, perpage, pages, total, photo } = response.data.photos;
+            setPhotos(photo);
         }).catch((err) => {
             console.log(err)
-        })
+        });
     }, []);
-    
+
     console.log(photos)
     return (
         <div>
