@@ -11,7 +11,7 @@ const Locations = () => {
             </div>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-sm-12">
+                    <div className="col-sm-12 mt-4">
                         <Maps />
                     </div>
                 </div>
