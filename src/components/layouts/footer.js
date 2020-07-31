@@ -40,7 +40,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row text-muted">
                         <div className="col-md-3"></div>
-                            <p>&copy; 2020 Prestigious Bike Race. All rights reserved | Developed by <a href="https://chineduemesue.netlify.app" target="_blank" rel="noopener noreferrer">Chinedu Emesue</a></p>
+                            <p>&copy; 2020 Prestigious Bike Race. All rights reserved | Developed with <span class="text-danger">♥</span> by <a href="https://chineduemesue.netlify.app" target="_blank" rel="noopener noreferrer">Chinedu Emesue</a></p>
                     </div>
                 </div>
             </div>
