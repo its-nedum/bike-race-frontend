@@ -13,13 +13,13 @@ const Pagination = ({photosPerPage,totalPhotos,paginate}) => {
             
                 <nav aria-label="Page navigation example">
                     <ul className="pagination center">
-                        <li className="page-item"><Link to="#!" className="page-link">Previous</Link></li>
+                        <li className="disabled page-item"><Link to="#!" className="page-link">Previous</Link></li>
                         {pageNumbers.map(number => (
                             <li key={number} className="page-item">
                                 <Link onClick={ () => paginate(number)} to="#!" className="page-link">{number}</Link>
                             </li>
                         ))}
-                        <li className="page-item"><Link to="#!" className="page-link">Next</Link></li>
+                        <li className="disabled page-item"><Link to="#!" className="page-link">Next</Link></li>
                     </ul>
                 </nav>
             

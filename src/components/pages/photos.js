@@ -32,7 +32,7 @@ const Photos = () => {
     const currentPhotos = photos.slice(indexOfFirstPhoto, indexOfLastPhoto);
 
     //Change page
-    const paginate = (pageNumber) => setCurrentPage(pageNumber)
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
         <div>
@@ -45,7 +45,7 @@ const Photos = () => {
             <div className="container-fluid">
                 <Images photos={currentPhotos} />
                 { photos.length !== 0 ? 
-                <Pagination photosPerPage={photosPerPage} totalPhotos={parseInt(totalPhotos)} paginate={paginate}/>
+                <Pagination photosPerPage={photosPerPage} totalPhotos={parseInt(totalPhotos)} paginate={paginate} />
                 : null }
             </div>
         </div>
