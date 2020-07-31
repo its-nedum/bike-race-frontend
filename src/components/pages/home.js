@@ -10,7 +10,7 @@ const Home = () => {
                 <div className="card bg-danger">
                     <div className="card-body">
                         <div className="card-title">
-                        <h5>The State of Colorado <i>Presents</i> </h5>
+                        <h5>The city of Boulder, Colorado <i>Presents</i> </h5>
                         <h2>Prestigious Bike Race 2021 Edition</h2>
                         </div>
                     </div>
