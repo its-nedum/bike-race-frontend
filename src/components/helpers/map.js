@@ -134,6 +134,21 @@ class Maps extends React.Component {
                 Jason Finn
             </Popup> 
             </Marker>
+            <Marker position={positionRider3} icon={this.riderIcon}>
+            <Popup>
+                Howard Thompson
+            </Popup> 
+            </Marker>
+            <Marker position={positionRider4} icon={this.riderIcon}>
+            <Popup>
+                Maggie Lantz
+            </Popup> 
+            </Marker>
+            <Marker position={positionRider5} icon={this.riderIcon}>
+            <Popup>
+                Lawrence Duran
+            </Popup> 
+            </Marker>
         </Map>
     )
 }
