@@ -11,7 +11,7 @@ const Home = () => {
                     <div className="card-body">
                         <div className="card-title">
                         <h5>The city of Boulder, Colorado <i>Presents</i> </h5>
-                        <h2>Prestigious Bike Race 2021 Edition</h2>
+                        <h2>Boulder Bike Tour 2021 Edition</h2>
                         </div>
                     </div>
                 </div>   
@@ -37,7 +37,7 @@ const Home = () => {
                 <div className="about-banner">
                     <div className="card">
                         <div className="card-body">
-                            <h5 className="card-title">About The <span className="text-danger standout-text">Prestigious Bike Race</span></h5><hr/>
+                            <h5 className="card-title">About The <span className="text-danger standout-text">Boulder Bike Tour</span></h5><hr/>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia tempore quasi non, repellendus deserunt? Perspiciatis at repellat, omnis non voluptas ut fugiat placeat animi nam iste quae totam distinctio?</p>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora facilis consequatur dolorum voluptatem, quisquam soluta repudiandae ipsum, exercitationem aut vel obcaecati quas omnis expedita laboriosam est fuga repellat amet ab!</p>
                         </div>
@@ -46,7 +46,7 @@ const Home = () => {
             </div>
 
             <div className="container-fluid image-banner">
-                <h4 className="text-white">Photos From Past Edition</h4>
+                <h4 className="text-white">Photos From Past Editions of The Boulder Bike Tour</h4>
                 <div className="row">
                     <div className="col-sm-12 col-md-3">
                         <img src={bike} alt="race-pix" className="imgz img-fluid"/>
