@@ -103,6 +103,12 @@ class Maps extends React.Component {
         const positionRider5 = [this.state.rider5.lat, this.state.rider5.lng]
         const positionRider6 = [this.state.rider6.lat, this.state.rider6.lng]
         const positionRider7 = [this.state.rider7.lat, this.state.rider7.lng]
+        const positionRider8 = [this.state.rider8.lat, this.state.rider8.lng]
+        const positionRider9 = [this.state.rider9.lat, this.state.rider9.lng]
+        const positionRider10 = [this.state.rider10.lat, this.state.rider10.lng]
+        const positionRider11 = [this.state.rider11.lat, this.state.rider11.lng]
+        const positionRider12 = [this.state.rider12.lat, this.state.rider12.lng]
+        const positionRider13 = [this.state.rider13.lat, this.state.rider13.lng]
     return (
         <Map className="map" center={positionRider1} zoom={this.state.zoom}>
             <TileLayer
