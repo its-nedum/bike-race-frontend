@@ -45,6 +45,18 @@ class Maps extends React.Component {
             lat: 40.02,
             lng: -105.30,
         },
+        rider11: {
+            lat: 40.01,
+            lng: -105.20,
+        },
+        rider12: {
+            lat: 39.98,
+            lng: -105.24,
+        },
+        rider13: {
+            lat: 39.99,
+            lng: -105.25,
+        },
         zoom: 13,
     }
        
