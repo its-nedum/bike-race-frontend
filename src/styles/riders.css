@@ -4,7 +4,7 @@
 }
 
 .rider-title {
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: #fff;
     margin-top: 20px;
 }
