@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Images from '../helpers/images.js'
 import Pagination from '../helpers/pagination.js'
-import { api_key } from '../helpers/utilities'
 import axios from 'axios'
 import '../../styles/photos.css'
 
@@ -12,11 +11,10 @@ const Photos = () => {
     const [totalPhotos, settotalPhotos] = useState(0);
     const [photosPerPage] = useState(40);
 
-
     useEffect(() => {
         axios({
             method: 'get',
-            url: `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${api_key}&tags=bikerace,BoulderBikeTour&format=json&nojsoncallback=1`,
+            url: `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=36d171a5b0d688aa172352df116dd6c0&tags=bikerace,BoulderBikeTour&format=json&nojsoncallback=1`,
         }).then((response) => {
             const { total, photo } = response.data.photos;
             setPhotos(photo);
