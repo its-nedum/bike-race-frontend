@@ -14,19 +14,35 @@ class Maps extends React.Component {
             lng: -105.24,
         },
         rider3: {
-            lat: 39.95,
-            lng: -105.24,
+            lat: 40.06,
+            lng: -105.26,
+        },
+        rider4: {
+            lat: 40.03,
+            lng: -105.23,
+        },
+        rider5: {
+            lat: 40.04,
+            lng: -105.23,
+        },
+        rider6: {
+            lat: 39.96,
+            lng: -105.22,
+        },
+        rider7: {
+            lat: 39.98,
+            lng: -105.21,
         },
         zoom: 13,
     }
-    
+      
     riderIcon = L.icon({
         iconUrl: riderImage,
         iconSize:[38,95],
         iconAnchor:[22,94],
         popupAnchor:[-3,-76]
     })
-
+    
     render(){
         const positionRider1 = [this.state.rider1.lat, this.state.rider1.lng]
         const positionRider2 = [this.state.rider2.lat, this.state.rider2.lng]
