@@ -33,9 +33,21 @@ class Maps extends React.Component {
             lat: 39.98,
             lng: -105.21,
         },
+        rider8: {
+            lat: 40.00,
+            lng: -105.23,
+        },
+        rider9: {
+            lat: 40.02,
+            lng: -105.26,
+        },
+        rider10: {
+            lat: 40.02,
+            lng: -105.30,
+        },
         zoom: 13,
     }
-      
+       
     riderIcon = L.icon({
         iconUrl: riderImage,
         iconSize:[38,95],
