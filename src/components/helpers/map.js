@@ -119,7 +119,7 @@ class Maps extends React.Component {
 
 
     return (
-        <Map className="map" center={positionRider1} zoom={this.state.zoom}>
+        <Map className="map" center={positionRider9} zoom={this.state.zoom}>
             <TileLayer
                 attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
