@@ -24,7 +24,7 @@ const Photos = () => {
         });
     }, []);
 
-    //Get current posts
+    //Get current photos
     const indexOfLastPhoto = currentPage * photosPerPage;
     const indexOfFirstPhoto = indexOfLastPhoto - photosPerPage;
     const currentPhotos = photos.slice(indexOfFirstPhoto, indexOfLastPhoto);
