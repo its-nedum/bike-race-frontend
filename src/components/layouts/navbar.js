@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
-            <Link className="navbar-brand" to="/">Bike Race 2020</Link>
+            <Link className="navbar-brand" to="/">Boulder Bike Tour 2021</Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>

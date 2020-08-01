@@ -10,6 +10,7 @@ const Locations = () => {
                 </div>
             </div>
             <div className="container-fluid">
+                <h3>Keep track of your favorite riders on the go</h3>
                 <div className="row">
                     <div className="col-sm-12 mt-4">
                         <Maps />

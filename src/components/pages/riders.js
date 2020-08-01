@@ -10,7 +10,7 @@ const Riders = () => {
                 </div>
             </div>
             <div className="container">
-                <h3 className="rider-title">Names of this years riders</h3>
+                <h3 className="rider-title">Meet our riders for this year's edition</h3>
                 <div className="row mt-3">
                     <table className="table table-striped table-hover table-bordered table-info table-sm">
                         <thead>
