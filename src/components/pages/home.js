@@ -38,7 +38,7 @@ const Home = () => {
                 <div className="about-banner">
                     <div className="card">
                         <div className="card-body">
-                            <h5 className="card-title">About The <span className="text-danger standout-text">Boulder Bike Tour</span></h5><hr/>
+                            <h5 className="card-title about-heading">About The <span className="text-danger standout-text">Boulder Bike Tour</span></h5><hr/>
                         <p className="about-txt">Once in every decade the city of Boulder, Colorado brings together bike racer from and around cities in America to 
                         compete for glory and honour in the prestigious bike racing competition called The Boulder Bike Tour.
                         This bike racing competition has been on going for the 5th time in a row, and this year, the organizers are bringing together 20 Americas finest
@@ -60,31 +60,31 @@ const Home = () => {
             <div className="container-fluid image-banner">
                 <h4 className="text-white">Photos From Past Editions of The Boulder Bike Tour</h4>
                 <div className="row">
-                    <div className="col-sm-12 col-md-3">
+                    <div className="col-sm-12 col-md-3 mb-3">
                         <img src={bike} alt="race-pix" className="imgz img-fluid"/>
                     </div>
-                    <div className="col-sm-12 col-md-3">
+                    <div className="col-sm-12 col-md-3 mb-3">
                         <img src={bike} alt="race-pix" className="imgz img-fluid"/>
                     </div>
-                    <div className="col-sm-12 col-md-3">
+                    <div className="col-sm-12 col-md-3 mb-3">
                         <img src={bike} alt="race-pix" className="imgz img-fluid"/>
                     </div>
-                    <div className="col-sm-12 col-md-3">
+                    <div className="col-sm-12 col-md-3 mb-3">
                         <img src={bike} alt="race-pix" className="imgz img-fluid"/>
                     </div>
                 </div>
 
-                <div className="row mt-4">
-                    <div className="col-sm-12 col-md-3">
+                <div className="row">
+                    <div className="col-sm-12 col-md-3 mb-3">
                         <img src={bike} alt="race-pix" className="imgz img-fluid"/>
                     </div>
-                    <div className="col-sm-12 col-md-3">
+                    <div className="col-sm-12 col-md-3 mb-3">
                         <img src={bike} alt="race-pix" className="imgz img-fluid"/>
                     </div>
-                    <div className="col-sm-12 col-md-3">
+                    <div className="col-sm-12 col-md-3 mb-3">
                         <img src={bike} alt="race-pix" className="imgz img-fluid"/>
                     </div>
-                    <div className="col-sm-12 col-md-3">
+                    <div className="col-sm-12 col-md-3 mb-3">
                         <img src={bike} alt="race-pix" className="imgz img-fluid"/>
                     </div>
                 </div>

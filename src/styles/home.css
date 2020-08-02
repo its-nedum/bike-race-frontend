@@ -25,7 +25,6 @@
 
 .count-down-timer {
     background-color: #743778;
-    /* height: 160px; */
 }
 
 .about-banner .card {
@@ -51,4 +50,9 @@ hr {
     text-align: justify;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.1rem;
+}
+
+.about-heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
 }
