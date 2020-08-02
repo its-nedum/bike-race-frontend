@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/home.css'
 import Timer from '../helpers/timer'
 import bike from '../../images/bike.jpg'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
@@ -38,8 +39,19 @@ const Home = () => {
                     <div className="card">
                         <div className="card-body">
                             <h5 className="card-title">About The <span className="text-danger standout-text">Boulder Bike Tour</span></h5><hr/>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti mollitia tempore quasi non, repellendus deserunt? Perspiciatis at repellat, omnis non voluptas ut fugiat placeat animi nam iste quae totam distinctio?</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora facilis consequatur dolorum voluptatem, quisquam soluta repudiandae ipsum, exercitationem aut vel obcaecati quas omnis expedita laboriosam est fuga repellat amet ab!</p>
+                        <p>Once in every decade, the city of Boulder, Colorado brings together bike racer from and around cities in America to 
+                        compete for glory and honour in the prestigious bike racing competition called The Boulder Bike Tour.
+                        This bike racing competition has been on going for the 5th time in a row, and this year, the organizers are bringing together 20 Americas finest
+                            bike racers from 20 American cities to participate and compete for best bike racer in the whole of America.
+                        </p>
+                        <p>This year's edition edition will take place at the our regular venue and you guessed right in Colorado at the foot of the Rocky Mountains.<br />
+                        You our wonderful audience and also good citizens of America are not just coming to watch your favorite riders on the track of action,
+                            you too can participate in suggesting a cool slogan for this year's Boulder Bike Tour for a chance to win something nice from the organizers. Awesome right? I know. 
+                            <span> Click <Link to="/contest">here</Link> to submit your slogan suggestions for this year's Boulder Bike Tour.</span>
+                        </p>
+                        <p>While you are here feel free to explore our website by viewing photos, see list of this year's rider, track your favourite riders position on our map 
+                            and don't forget to participate in the slogan contest as we countdown to this year's Boulder Bike Tour.
+                        </p>
                         </div>
                     </div>
                 </div>
