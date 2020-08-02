@@ -17,11 +17,11 @@ const Timer = () => {
             const now = new Date().getTime();
             const distance = countdownDate - now;
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) /(1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            const months = Math.floor(days / 30.458);
+            const days = Math.round(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.round(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+            const minutes = Math.round((distance % (1000 * 60 * 60)) /(1000 * 60));
+            const seconds = Math.round((distance % (1000 * 60)) / 1000);
+            const months = Math.round(days / 30.458);
 
             if (distance < 0){
                 // stop our timer
