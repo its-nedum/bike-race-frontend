@@ -1,5 +1,7 @@
 .welcome-banner .card {
     border-radius: 0px;
+    background-color: #743778;
+    color: #fff;
 }
 
 .welcome-banner h5 {

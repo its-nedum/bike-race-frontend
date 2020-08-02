@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div className="">
             <div className="welcome-banner">
-                <div className="card bg-danger">
+                <div className="card">
                     <div className="card-body">
                         <div className="card-title">
                         <h5>The city of Boulder, Colorado <i>presents</i> </h5>

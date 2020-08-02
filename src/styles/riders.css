@@ -1,10 +1,15 @@
 .riders-card {
     border-radius: 0px;
-    background-color: #EFB1C8;
+    background-color: #743778;
+    color: #fff;
 }
 
 .rider-title {
     text-transform: capitalize;
     color: #fff;
     margin-top: 20px;
+}
+
+.table-color {
+    background-color: #EFB1C8; 
 }
