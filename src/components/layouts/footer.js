@@ -9,8 +9,8 @@ const Footer = () => {
                 <div className="container">
                         <div className="row">
                             <div className="col-sm-12 col-md-4">
-                                <h4>About Us</h4>
-                                <p className="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, neque perferendis ipsam dignissimos tempore vitae. Asperiores quae consequatur officiis veritatis esse fugit autem perferendis nihil. Odio, reprehenderit. Exercitationem, repudiandae impedit.</p>
+                                <h4>Boulder Bike Tour</h4>
+                                <p className="about-text">The Boulder Bike Tour is a bike racing competition that takes place in Boulder, Colorado at the foot of the Rocky Mountains once every decade.</p>
                             </div>
                             <div className="col-sm-12 col-md-4">
                                 <h4>Quick Links</h4>
