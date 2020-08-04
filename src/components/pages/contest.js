@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../styles/contest.css'
 
 const Contest = () => {
+    const [firstname, setFirstname] = useState('');
+    const [lastname, setLastname] = useState('');
+    const [email, setEmail] = useState('');
+    const [slogan, setSlogan] = useState('');
+    
+
     return (
         <div>
             <div className="card contest-card">
