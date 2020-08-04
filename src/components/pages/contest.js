@@ -6,8 +6,24 @@ const Contest = () => {
     const [lastname, setLastname] = useState('');
     const [email, setEmail] = useState('');
     const [slogan, setSlogan] = useState('');
+    const [btnValue, setBtnValue] = useState('SUBMIT')
+    const [error, setError] = useState('')
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
+        if (!firstname || !lastname || !email || !slogan) {
+            setError('All fields are required');
+            return false;
+        }
+
+        if (/\S+@\S+\.\S+/.test(email) === false) {
+            setError('Enter a valid email address')
+            return false;
+        }
+            console.log({firstname,lastname,email,slogan})
+        
+    }
     return (
         <div>
             <div className="card contest-card">
@@ -22,6 +38,7 @@ const Contest = () => {
                         <form className="contest-form mt-5">
                         <h3>Submit Your Slogan</h3>
                         <p>You think you have the perfect slogan for this year's edition? Lets' hear it.</p>
+                        <p className="text-danger">{error}</p>
                         <div className="row">
                             <div className="col-sm-12 col-md-6 input-group mb-3">   
                                 <div className="input-group-prepend">
@@ -48,14 +65,14 @@ const Contest = () => {
                         <div className="row">
                             <div className="col-sm-12">
                                 <div className="form-group">
-                                    <textarea className="form-control" id="message" rows="3" value={slogan} onChange={e => setSlogan(e.target.value)} placeholder="Type your slogan here..." required=""></textarea>
+                                    <textarea className="form-control" id="message" rows="3" value={slogan} onChange={e => setSlogan(e.target.value)} placeholder="Type your slogan here..." required></textarea>
                                 </div>
                             </div>
                         </div>
                         <div className="row">
                         <div className="col-sm-12">
                             <div className="submit_btn">
-                                <input type="submit" className="form-control btn btn-primary" value='SUBMIT' />
+                                <input type="submit" className="form-control btn btn-primary" onClick={handleSubmit} value={btnValue} />
                             </div>
                         </div>
                         </div>
