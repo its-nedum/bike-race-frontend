@@ -6,7 +6,7 @@ const Contest = () => {
     const [lastname, setLastname] = useState('');
     const [email, setEmail] = useState('');
     const [slogan, setSlogan] = useState('');
-    
+
 
     return (
         <div>
@@ -27,14 +27,14 @@ const Contest = () => {
                                 <div className="input-group-prepend">
                                     <span className="input-group-text" id="basic-addon1"><span className="fas fa-user-circle"></span></span>
                                 </div>
-                            <input type="text" className="form-control" placeholder="First Name" aria-label="firstname" aria-describedby="basic-addon1" />
+                            <input type="text" className="form-control" placeholder="First Name" aria-label="firstname" value={firstname} onChange={e => setFirstname(e.target.value)} aria-describedby="basic-addon1" required/>
                             </div>
                         
                             <div className="col-sm-12 col-md-6 input-group mb-3">   
                                 <div className="input-group-prepend">
                                     <span className="input-group-text" id="basic-addon1"><span className="fas fa-user-circle"></span></span>
                                 </div>
-                            <input type="text" className="form-control" placeholder="Last Name" aria-label="lastname" aria-describedby="basic-addon1" />
+                            <input type="text" className="form-control" placeholder="Last Name" aria-label="lastname" value={lastname} onChange={e => setLastname(e.target.value)} aria-describedby="basic-addon1" required/>
                             </div>
                         </div>
                         <div className="row">
@@ -42,13 +42,13 @@ const Contest = () => {
                                 <div className="input-group-prepend">
                                     <span className="input-group-text" id="basic-addon1"><span className="fas fa-envelope"></span></span>
                                 </div>
-                            <input type="email" className="form-control" placeholder="Email Address" aria-label="email" aria-describedby="basic-addon1" />
+                            <input type="email" className="form-control" placeholder="Email Address" value={email} onChange={e => setEmail(e.target.value)} aria-label="email" aria-describedby="basic-addon1" required/>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-sm-12">
                                 <div className="form-group">
-                                    <textarea className="form-control" id="message" rows="3" placeholder="Type your slogan here..." required=""></textarea>
+                                    <textarea className="form-control" id="message" rows="3" value={slogan} onChange={e => setSlogan(e.target.value)} placeholder="Type your slogan here..." required=""></textarea>
                                 </div>
                             </div>
                         </div>
