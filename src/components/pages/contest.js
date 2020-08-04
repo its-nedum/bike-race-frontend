@@ -11,17 +11,39 @@ const Contest = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
+        // check if all fields are filled
         if (!firstname || !lastname || !email || !slogan) {
-            setError('All fields are required');
+            setError('*All fields are required');
+            return false;
+        }
+        // check if the email is valid
+        if (/\S+@\S+\.\S+/.test(email) === false) {
+            setError('*Enter a valid email address')
             return false;
         }
 
-        if (/\S+@\S+\.\S+/.test(email) === false) {
-            setError('Enter a valid email address')
-            return false;
+        // when all input fields are filled
+        if (firstname && lastname && email && slogan){
+            setError('')
+            setBtnValue('Sending...')
+
+            // prepare data
+            const entry = {
+                firstname,
+                lastname,
+                email,
+                slogan,
+            }
+
+            console.log(entry)
+            // clear all entries
+            setFirstname('')
+            setLastname('')
+            setEmail('')
+            setSlogan('')
+            setBtnValue('SUBMIT')
         }
-            console.log({firstname,lastname,email,slogan})
+            
         
     }
     return (
