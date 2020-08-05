@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import Images from '../helpers/images.js'
-import Pagination from '../helpers/pagination.js'
 import axios from 'axios'
 import '../../styles/photos.css'
+import Pagination from '../helpers/pagination'
 
 const Photos = () => {
     const [photos, setPhotos] = useState([]);
@@ -24,7 +24,7 @@ const Photos = () => {
         });
     }, []);
 
-    //Get current photos
+    //Get current photos for pagination
     const indexOfLastPhoto = currentPage * photosPerPage;
     const indexOfFirstPhoto = indexOfLastPhoto - photosPerPage;
     const currentPhotos = photos.slice(indexOfFirstPhoto, indexOfLastPhoto);
@@ -43,7 +43,7 @@ const Photos = () => {
             <div className="container-fluid">
                 <Images photos={currentPhotos} />
                 { photos.length !== 0 ? 
-                <Pagination photosPerPage={photosPerPage} totalPhotos={parseInt(totalPhotos)} paginate={paginate} />
+                    <Pagination total={parseInt(totalPhotos)} paginate={paginate} />
                 : null }
             </div>
         </div>
