@@ -6,31 +6,44 @@ import Pagination from '../helpers/pagination'
 
 const Photos = () => {
     const [photos, setPhotos] = useState([]);
-    // Pagination variables
-    const [currentPage, setCurrentPage] = useState(1);
     const [totalPhotos, settotalPhotos] = useState(0);
-    const [photosPerPage] = useState(40);
+    const [page, setPage] = useState(1)
 
-    useEffect(() => {
-        axios({
-            method: 'get',
-            url: `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=36d171a5b0d688aa172352df116dd6c0&tags=bikerace,BoulderBikeTour&format=json&nojsoncallback=1`,
-        }).then((response) => {
+    const getPhotos = (page) => {
+        const url = 'https://api.flickr.com/services/rest/'
+        const params = {
+            api_key: `36d171a5b0d688aa172352df116dd6c0`,
+            method: 'flickr.photos.search',
+            tags: 'bikerace,BoulderBikeTour',
+            media: 'photo',
+            per_page: 40,
+            format: 'json',
+            nojsoncallback: 1,
+            extras: 'date_upload, icon_server, owner_name, views',
+            page
+        }
+        axios.get(
+            `${url}`,{params}
+        ).then((response) => {
             const { total, photo } = response.data.photos;
             setPhotos(photo);
             settotalPhotos(total)
         }).catch((err) => {
             console.log(err)
         });
-    }, []);
+    };
 
-    //Get current photos for pagination
-    const indexOfLastPhoto = currentPage * photosPerPage;
-    const indexOfFirstPhoto = indexOfLastPhoto - photosPerPage;
-    const currentPhotos = photos.slice(indexOfFirstPhoto, indexOfLastPhoto);
 
     //Change page
-    const paginate = (pageNumber) => setCurrentPage(pageNumber);
+    const paginate = (pageNumber) => {
+        //setPage(pageNumber)
+        getPhotos(pageNumber)
+    }
+
+    // load the first page of photos
+    useEffect(() => {
+        getPhotos(page)
+    },[])
 
     return (
         <div>
@@ -41,7 +54,7 @@ const Photos = () => {
             </div>
 
             <div className="container-fluid">
-                <Images photos={currentPhotos} />
+                <Images photos={photos} />
                 { photos.length !== 0 ? 
                     <Pagination total={parseInt(totalPhotos)} paginate={paginate} />
                 : null }
