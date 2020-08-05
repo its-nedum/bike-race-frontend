@@ -8,6 +8,7 @@ import Riders from './components/pages/riders';
 import Contest from './components/pages/contest';
 import Navbar from './components/layouts/navbar';
 import Footer from './components/layouts/footer';
+import Scroll from './components/pages/scroll'
 
 function App() {
   return (
