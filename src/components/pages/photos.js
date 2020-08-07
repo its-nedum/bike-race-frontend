@@ -36,7 +36,6 @@ const Photos = () => {
 
     //Change page
     const paginate = (pageNumber) => {
-        //setPage(pageNumber)
         getPhotos(pageNumber)
     }
 
