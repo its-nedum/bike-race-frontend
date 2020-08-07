@@ -37,6 +37,7 @@
   }
 }
 
-/* .cover_img{
-  background-image: url('./images/banner.jpg');
-} */
+.cover_img{
+  /* background-image: url('./images/banner.jpg'); */
+  background-color: lavender;
+}
