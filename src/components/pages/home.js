@@ -2,7 +2,7 @@ import React from 'react'
 import '../../styles/home.css'
 import Timer from '../helpers/timer'
 import bike from '../../images/bike.jpg'
-import image1 from '../../images/carousel_image1.jpg'
+import image1 from '../../images/carousel_image.jpg'
 import image2 from '../../images/carousel_image2.jpg'
 import image3 from '../../images/carousel_image3.jpg'
 import { Link } from 'react-router-dom'
@@ -15,7 +15,7 @@ const Home = () => {
                     <div className="card-body">
                         <div className="card-title">
                         <h5>The city of Boulder, Colorado <i>presents</i> </h5>
-                        <h2>Boulder Bike Tour 2021 Edition</h2>
+                        <h2>Boulder Bike Tour 2020 Edition</h2>
                         </div>
                     </div>
                 </div>   
@@ -24,7 +24,7 @@ const Home = () => {
             <div className="container-fluid">
                 <div className="row timer-banner">
                     <div className="col-sm-12 col-md-8 show-carousel">
-                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
                         <ol className="carousel-indicators">
                             <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -33,24 +33,12 @@ const Home = () => {
                         <div className="carousel-inner">
                             <div className="carousel-item active">
                             <img src={image1} className="d-block w-100 img-fluid" alt="bike"/>
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </div>
                             </div>
                             <div className="carousel-item">
                             <img src={image2} className="d-block w-100 img-fluid" alt="bike"/>
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
                             </div>
                             <div className="carousel-item">
-                            <img src={bike} className="d-block w-100 img-fluid" alt="bike"/>
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </div>
+                            <img src={image3} className="d-block w-100 img-fluid" alt="bike"/>
                             </div>
                         </div>
                         <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -66,7 +54,7 @@ const Home = () => {
                     <div className="col-sm-12 col-md-4 count-down">
                         <div className="row start-date">
                             <div className="text-center">
-                                <h5 className="card-title">Start Date: Thursday, April 1, 2021</h5>
+                                <h5 className="card-title">Start Date: Thursday, April 1, 2020</h5>
                             </div>
                         </div>
                         <div className="row count-down-timer">
