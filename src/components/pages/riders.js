@@ -9,9 +9,11 @@ const Riders = () => {
                     <h3>We know what we are, but not what we may be ~ Anonymous</h3>
                 </div>
             </div>
-            <div className="container">
-                <h3 className="rider-title">Meet our riders for this year's edition</h3>
+            <div className="container-fluid">
+                
                 <div className="row mt-3">
+                    <div className="col-sm-12 col-md-7">
+                    <h3 className="rider-title">Meet our riders for this year's edition</h3>
                     <table className="table table-striped table-hover table-bordered table-color table-sm">
                         <thead>
                             <tr>
@@ -144,6 +146,8 @@ const Riders = () => {
                             </tr>
                         </tbody>
                     </table>
+                    </div>
+                    <div className="col-sm-12 col-md-5"></div>
                 </div>
             </div>
         </div>
