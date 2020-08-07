@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styles/riders.css'
+import bike from '../../images/b1.jpg'
 
 const Riders = () => {
     return (
@@ -10,10 +11,10 @@ const Riders = () => {
                 </div>
             </div>
             <div className="container-fluid">
-                
+            <h3 className="rider-title">Meet our riders for this year's edition</h3>
                 <div className="row mt-3">
                     <div className="col-sm-12 col-md-7">
-                    <h3 className="rider-title">Meet our riders for this year's edition</h3>
+                    
                     <table className="table table-striped table-hover table-bordered table-color table-sm">
                         <thead>
                             <tr>
@@ -147,7 +148,9 @@ const Riders = () => {
                         </tbody>
                     </table>
                     </div>
-                    <div className="col-sm-12 col-md-5"></div>
+                    <div className="col-sm-12 col-md-5">
+                        <img src={bike} className="" alt="riders" />
+                    </div>
                 </div>
             </div>
         </div>
