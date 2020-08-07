@@ -15,7 +15,7 @@ const Riders = () => {
                 <div className="row mt-3">
                     <div className="col-sm-12 col-md-7">
                     
-                    <table className="table table-striped table-hover table-bordered table-color table-sm">
+                    <table className="table table-hover table-color table-sm">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -149,7 +149,7 @@ const Riders = () => {
                     </table>
                     </div>
                     <div className="col-sm-12 col-md-5">
-                        <img src={bike} className="" alt="riders" />
+                        <img src={bike} className="img-fluid" alt="riders" />
                     </div>
                 </div>
             </div>
