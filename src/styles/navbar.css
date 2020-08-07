@@ -2,3 +2,11 @@
     text-transform: uppercase;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+nav {
+    background-color: #1b1c1d;
+}
+
+.nav-link {
+    color: #fff !important;
+}
