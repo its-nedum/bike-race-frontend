@@ -15,7 +15,7 @@ const Riders = () => {
                 <div className="row mt-3">
                     <div className="col-sm-12 col-md-7">
                     
-                    <table className="table table-hover table-color table-sm">
+                    <table className="table table-color table-sm">
                         <thead>
                             <tr>
                                 <th>#</th>
