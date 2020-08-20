@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../../styles/contest.css'
+import axios from 'axios'
 
 const Contest = () => {
     const [firstname, setFirstname] = useState('');
@@ -35,16 +36,28 @@ const Contest = () => {
                 slogan,
             }
 
-            console.log(entry)
-            // clear all entries
-            setFirstname('')
-            setLastname('')
-            setEmail('')
-            setSlogan('')
-            setBtnValue('SUBMIT')
-        }
-            
+            axios({
+                method: 'POST',
+                url: 'http://localhost:3001/api/v1/slogans',
+                header: {
+                    'Content-Type': 'application/json',
+                },
+                data: JSON.stringify(entry)
+            }).then((response) => {
+                console.log(response)
+
+                // clear all entries
+                setFirstname('')
+                setLastname('')
+                setEmail('')
+                setSlogan('')
+                setBtnValue('SUBMIT')
+            }).catch((err) => {
+                console.log(err);
+            })
         
+        }
+
     }
     return (
         <div>
@@ -57,7 +70,7 @@ const Contest = () => {
                 <div className="row">
                     <div className="col-md-3"></div>
                     <div className="col-sm-12 col-md-6">
-                        <form className="contest-form mt-5">
+                        <form className="contest-form mt-5" onSubmit={handleSubmit}>
                         <h3>Submit Your Slogan</h3>
                         <p>You think you have the perfect slogan for this year's edition? Lets' hear it.</p>
                         <p className="text-danger">{error}</p>
