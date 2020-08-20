@@ -1,7 +1,14 @@
 import React from 'react'
 import '../../styles/home.css'
 import Timer from '../helpers/timer'
-import bike from '../../images/bike.jpg'
+import bike1 from '../../images/bike1.jpg'
+import bike2 from '../../images/bike2.jpg'
+import bike3 from '../../images/bike3.jpg'
+import bike4 from '../../images/bike4.jpg'
+import bike5 from '../../images/bike5.jpg'
+import bike6 from '../../images/bike6.jpg'
+import bike7 from '../../images/bike7.jpg'
+import bike8 from '../../images/bike8.jpg'
 import image1 from '../../images/carousel_image.jpg'
 import image2 from '../../images/carousel_image2.jpg'
 import image3 from '../../images/carousel_image3.jpg'
@@ -93,31 +100,31 @@ const Home = () => {
                 <h4 className="text-white">Photos From Past Editions of The Boulder Bike Tour</h4>
                 <div className="row">
                     <div className="col-sm-12 col-md-3 mb-3">
-                        <img src={bike} alt="race-pix" className="imgz img-fluid"/>
+                        <img src={bike1} alt="race-pix" className="imgz img-fluid"/>
                     </div>
                     <div className="col-sm-12 col-md-3 mb-3">
-                        <img src={bike} alt="race-pix" className="imgz img-fluid"/>
+                        <img src={bike2} alt="race-pix" className="imgz img-fluid"/>
                     </div>
                     <div className="col-sm-12 col-md-3 mb-3">
-                        <img src={bike} alt="race-pix" className="imgz img-fluid"/>
+                        <img src={bike3} alt="race-pix" className="imgz img-fluid"/>
                     </div>
                     <div className="col-sm-12 col-md-3 mb-3">
-                        <img src={bike} alt="race-pix" className="imgz img-fluid"/>
+                        <img src={bike4} alt="race-pix" className="imgz img-fluid"/>
                     </div>
                 </div>
 
                 <div className="row">
                     <div className="col-sm-12 col-md-3 mb-3">
-                        <img src={bike} alt="race-pix" className="imgz img-fluid"/>
+                        <img src={bike5} alt="race-pix" className="imgz img-fluid"/>
                     </div>
                     <div className="col-sm-12 col-md-3 mb-3">
-                        <img src={bike} alt="race-pix" className="imgz img-fluid"/>
+                        <img src={bike6} alt="race-pix" className="imgz img-fluid"/>
                     </div>
                     <div className="col-sm-12 col-md-3 mb-3">
-                        <img src={bike} alt="race-pix" className="imgz img-fluid"/>
+                        <img src={bike7} alt="race-pix" className="imgz img-fluid"/>
                     </div>
                     <div className="col-sm-12 col-md-3 mb-3">
-                        <img src={bike} alt="race-pix" className="imgz img-fluid"/>
+                        <img src={bike8} alt="race-pix" className="imgz img-fluid"/>
                     </div>
                 </div>
             </div>

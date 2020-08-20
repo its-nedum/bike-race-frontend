@@ -7,6 +7,7 @@ import Pagination from '../helpers/pagination'
 const Photos = () => {
     const [photos, setPhotos] = useState([]);
     const [totalPhotos, settotalPhotos] = useState(0);
+    // eslint-disable-next-line
     const [page, setPage] = useState(1)
 
     const getPhotos = (page) => {
@@ -40,7 +41,7 @@ const Photos = () => {
     }
 
     // load the first page of photos
-    useEffect(() => {
+    useEffect((page) => {
         getPhotos(page)
     },[])
 
