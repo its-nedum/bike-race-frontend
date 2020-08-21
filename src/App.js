@@ -8,6 +8,7 @@ import Riders from './components/pages/riders';
 import Contest from './components/pages/contest';
 import Navbar from './components/layouts/navbar';
 import Footer from './components/layouts/footer';
+import Slogan from './components/helpers/slogans'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/locations' component={Locations} />
           <Route path='/riders' component={Riders} />
           <Route path='/contest' component={Contest} />
+          <Route path='/slogans' component={Slogan} />
         </Switch>
         <Footer />
       </div>
