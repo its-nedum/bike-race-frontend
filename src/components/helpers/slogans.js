@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
+import Spinner from './spinner'
 
 const Slogans = () => {
     const [slogans, setSlogans] = useState([])
@@ -14,7 +15,6 @@ const Slogans = () => {
         }).then((response) => {
             const { data:{ data} } = response
             setSlogans(data)
-            //console.log(slogans)
         }).catch((err) => {
             console.log(err);
         })
@@ -22,7 +22,8 @@ const Slogans = () => {
 
     useEffect(() => {
         getSlogans()
-    });
+    },[]);
+
     return (
         
         <div>
@@ -35,6 +36,7 @@ const Slogans = () => {
                 <div className="row mt-4">
                     
                     <div className="col-sm-12">
+                    {slogans.length === 0 ? <Spinner /> : 
                     <table className="table table-color table-sm table-bordered">
                         <thead>
                             <tr>
@@ -46,16 +48,21 @@ const Slogans = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            
-                            <tr>
-                                <td>1</td>
-                                <td>Dustin</td>
-                                <td>Green</td>
-                                <td>Hickory Hills</td>
-                                <td>Hickory Hills</td>
-                            </tr>
+                           { slogans && slogans.map((slogan) => {
+                                return(
+                                    <tr key={slogan.id}>
+                                        <td>{slogan.id}</td>
+                                        <td>{slogan.firstname}</td>
+                                        <td>{slogan.lastname}</td>
+                                        <td>{slogan.email} Hills</td>
+                                        <td>{slogan.slogan}</td>
+                                    </tr>
+                                )
+                            })
+                           }
                         </tbody>
                     </table>
+                    }
                     </div>
                     
                 </div>

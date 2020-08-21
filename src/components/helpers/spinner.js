@@ -12,7 +12,7 @@ const Spinner = () => {
                             size={150}
                             color={'#743778'}
                         />
-                        <p className="text-white">Loading photos please wait...</p>
+                        <p className="text-white">Loading please wait...</p>
                     </div>
                 </div>
             </div>

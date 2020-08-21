@@ -135,7 +135,11 @@ const Contest = () => {
                         </form>
                     </div>
                     <div className="col-md-3"></div>
-                    <Link to="/slogans">Click Me</Link>
+                </div>
+                <div className="row">
+                    <div className="center-text">
+                        <Link to="/slogans" className="btn btn-info">View Submissions</Link>
+                    </div>
                 </div>
             </div>
         </div>
