@@ -31,6 +31,12 @@ const Contest = () => {
             return false;
         }
 
+        // check for length of slogan
+        if (slogan.length > 50) {
+            setError('*Slogan idea must be under 50 characters')
+            return false;
+        }
+
         // when all input fields are filled
         if (firstname && lastname && email && slogan){
             setError('')
