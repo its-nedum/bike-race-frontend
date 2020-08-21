@@ -138,7 +138,7 @@ const Contest = () => {
                 </div>
                 <div className="row">
                     <div className="center-text">
-                        <Link to="/slogans" className="btn btn-info">View Submissions</Link>
+                        <Link to="/submissions" className="btn btn-info">View Submissions</Link>
                     </div>
                 </div>
             </div>

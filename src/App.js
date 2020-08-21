@@ -21,7 +21,7 @@ function App() {
           <Route path='/locations' component={Locations} />
           <Route path='/riders' component={Riders} />
           <Route path='/contest' component={Contest} />
-          <Route path='/slogans' component={Slogan} />
+          <Route path='/submissions' component={Slogan} />
         </Switch>
         <Footer />
       </div>
