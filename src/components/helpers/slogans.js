@@ -1,7 +1,30 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import axios from 'axios'
 
 const Slogans = () => {
+    const [slogans, setSlogans] = useState([])
+
+    const getSlogans = () => {
+        axios({
+            method: 'GET',
+            url: 'http://localhost:3001/api/v1/slogans',
+            header: {
+                'Content-Type': 'application/json',
+            },
+        }).then((response) => {
+            const { data:{ data} } = response
+            setSlogans(data)
+            //console.log(slogans)
+        }).catch((err) => {
+            console.log(err);
+        })
+    }
+
+    useEffect(() => {
+        getSlogans()
+    });
     return (
+        
         <div>
             <div className="card contest-card">
                 <div className="card-body">
@@ -23,6 +46,7 @@ const Slogans = () => {
                             </tr>
                         </thead>
                         <tbody>
+                            
                             <tr>
                                 <td>1</td>
                                 <td>Dustin</td>
