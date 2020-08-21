@@ -1,8 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import Spinner from './spinner'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Slogans = () => {
+    const successMsg = () => toast.success("Submissions loaded successfully!");
     const [slogans, setSlogans] = useState([])
 
     const getSlogans = () => {
@@ -15,6 +18,7 @@ const Slogans = () => {
         }).then((response) => {
             const { data:{ data} } = response
             setSlogans(data)
+            successMsg()
         }).catch((err) => {
             console.log(err);
         })
@@ -34,7 +38,7 @@ const Slogans = () => {
             </div>
             <div className="container">
                 <div className="row mt-4">
-                    
+                <ToastContainer />    
                     <div className="col-sm-12">
                     {slogans.length === 0 ? <Spinner /> : 
                     <table className="table table-color table-sm table-bordered">
@@ -44,7 +48,7 @@ const Slogans = () => {
                                 <th>First Name</th>
                                 <th>Last Name</th>
                                 <th>Email</th>
-                                <th>Slogan</th>
+                                <th>Submission</th>
                             </tr>
                         </thead>
                         <tbody>
