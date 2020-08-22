@@ -8,23 +8,22 @@ const Slogans = () => {
     const successMsg = () => toast.success("Submissions loaded successfully!");
     const [slogans, setSlogans] = useState([])
 
-    const getSlogans = () => {
-        axios({
-            method: 'GET',
-            url: 'http://localhost:3001/api/v1/slogans',
-            header: {
-                'Content-Type': 'application/json',
-            },
-        }).then((response) => {
-            const { data:{ data} } = response
-            setSlogans(data)
-            successMsg()
-        }).catch((err) => {
-            console.log(err);
-        })
-    }
-    
     useEffect(() => {
+        const getSlogans = () => {
+            axios({
+                method: 'GET',
+                url: 'http://localhost:3001/api/v1/slogans',
+                header: {
+                    'Content-Type': 'application/json',
+                },
+            }).then((response) => {
+                const { data:{ data} } = response
+                setSlogans(data)
+                successMsg()
+            }).catch((err) => {
+                console.log(err);
+            })
+        }
         getSlogans()
     }, []);
 
