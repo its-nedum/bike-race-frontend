@@ -23,17 +23,17 @@ const Slogans = () => {
             console.log(err);
         })
     }
-    // eslint-disable-next-line
+    
     useEffect(() => {
         getSlogans()
-    },[]);
+    }, []);
 
     return (
         
         <div>
             <div className="card contest-card">
                 <div className="card-body">
-                    <h3>Here is a list of submitted slogan for the contest</h3>
+                    <h3>Here is a list of submissions for the slogan contest</h3>
                 </div>
             </div>
             <div className="container">

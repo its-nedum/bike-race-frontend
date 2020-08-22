@@ -137,7 +137,8 @@ const Contest = () => {
                     <div className="col-md-3"></div>
                 </div>
                 <div className="row">
-                    <div className="center-text">
+                    <div className="col-md-10"></div>
+                    <div className="col-sm-12 col-md-2 center-text submission-link mt-2">
                         <Link to="/submissions" className="">View Submissions</Link>
                     </div>
                 </div>

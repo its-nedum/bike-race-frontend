@@ -20,3 +20,7 @@
 .contest-form p {
     text-align: left;
 }
+
+.submission-link a:hover {
+    text-decoration: none;
+}
