@@ -31,7 +31,7 @@ const Home = () => {
             <div className="container-fluid">
                 <div className="row timer-banner">
                     <div className="col-sm-12 col-md-8 show-carousel">
-                    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                         <ol className="carousel-indicators">
                             <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
