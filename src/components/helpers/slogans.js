@@ -23,7 +23,7 @@ const Slogans = () => {
             console.log(err);
         })
     }
-
+    // eslint-disable-next-line
     useEffect(() => {
         getSlogans()
     },[]);
