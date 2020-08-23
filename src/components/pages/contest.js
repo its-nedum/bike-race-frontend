@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Contest = () => {
     // success and error message
     const successMsg = () => toast.success("Slogan submitted successfully!");
+    const warningMsg = () => toast.warning("Record already exists!")
     const errorMsg = () => toast.error("An error occurred!");
 
     // my hooks
@@ -59,16 +60,29 @@ const Contest = () => {
                 data: entry
             }).then((response) => {
                 const { data:{ status } } = response
-                if(status === 'Success'){
-                    // clear all entries
-                    setFirstname('')
-                    setLastname('')
-                    setEmail('')
-                    setSlogan('')
-                    setBtnValue('SUBMIT')
-
-                    // call react-toastify
-                    successMsg()
+                switch (status) {
+                    case "Success":
+                        // clear all entries
+                        setFirstname('')
+                        setLastname('')
+                        setEmail('')
+                        setSlogan('')
+                        setBtnValue('SUBMIT')
+                        // call react-toastify
+                        successMsg()
+                        break;
+                    case "Warning":
+                        // return btn text
+                        setBtnValue('SUBMIT')
+                        // call react-toastify
+                        warningMsg()
+                        break;
+                    default:
+                        // return btn text
+                        setBtnValue('SUBMIT')
+                        // call react-toastify
+                        errorMsg()
+                        break;
                 }
                 
             }).catch((err) => {
@@ -121,7 +135,7 @@ const Contest = () => {
                         <div className="row">
                             <div className="col-sm-12">
                                 <div className="form-group">
-                                    <textarea className="form-control" id="message" rows="3" value={slogan} onChange={e => setSlogan(e.target.value)} placeholder="Type your slogan here..." required></textarea>
+                                    <textarea className="form-control" id="message" rows="3" maxLength="50" value={slogan} onChange={e => setSlogan(e.target.value)} placeholder="Type your slogan here..." required></textarea>
                                 </div>
                             </div>
                         </div>

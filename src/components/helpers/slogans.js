@@ -57,7 +57,7 @@ const Slogans = () => {
                                         <td>{slogan.id}</td>
                                         <td>{slogan.firstname}</td>
                                         <td>{slogan.lastname}</td>
-                                        <td>{slogan.email} Hills</td>
+                                        <td>{slogan.email}</td>
                                         <td>{slogan.slogan}</td>
                                     </tr>
                                 )
