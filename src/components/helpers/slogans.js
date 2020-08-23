@@ -40,31 +40,33 @@ const Slogans = () => {
                 <ToastContainer />    
                     <div className="col-sm-12">
                     {slogans.length === 0 ? <Spinner /> : 
-                    <table className="table table-color table-sm table-bordered">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Email</th>
-                                <th>Submission</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                           { slogans && slogans.map((slogan) => {
-                                return(
-                                    <tr key={slogan.id}>
-                                        <td>{slogan.id}</td>
-                                        <td>{slogan.firstname}</td>
-                                        <td>{slogan.lastname}</td>
-                                        <td>{slogan.email}</td>
-                                        <td>{slogan.slogan}</td>
-                                    </tr>
-                                )
-                            })
-                           }
-                        </tbody>
-                    </table>
+                    <div className="table-responsive">
+                        <table className="table table-color table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Email</th>
+                                    <th>Submission</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            { slogans && slogans.map((slogan) => {
+                                    return(
+                                        <tr key={slogan.id}>
+                                            <td>{slogan.id}</td>
+                                            <td>{slogan.firstname}</td>
+                                            <td>{slogan.lastname}</td>
+                                            <td>{slogan.email}</td>
+                                            <td>{slogan.slogan}</td>
+                                        </tr>
+                                    )
+                                })
+                            }
+                            </tbody>
+                        </table>
+                    </div>
                     }
                     </div>
                     
