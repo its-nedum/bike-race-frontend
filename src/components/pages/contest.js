@@ -53,7 +53,7 @@ const Contest = () => {
 
             axios({
                 method: 'POST',
-                url: 'http://localhost:3001/api/v1/slogans',
+                url: 'https://boulderbiketour-api.herokuapp.com/api/v1/slogans',
                 header: {
                     'Content-Type': 'application/json',
                 },
