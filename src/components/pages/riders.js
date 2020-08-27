@@ -14,7 +14,7 @@ const Riders = () => {
             <h3 className="rider-title">Meet our riders for this year's edition</h3>
                 <div className="row mt-3">
                     <div className="col-sm-12 col-md-7">
-                    
+                    <div className="table-responsive">
                     <table className="table table-color table-sm">
                         <thead>
                             <tr>
@@ -147,6 +147,7 @@ const Riders = () => {
                             </tr>
                         </tbody>
                     </table>
+                    </div>
                     </div>
                     <div className="col-sm-12 col-md-5">
                         <img src={bike} className="img-fluid" alt="riders" />
