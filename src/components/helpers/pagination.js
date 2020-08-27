@@ -13,7 +13,7 @@ const Paginate = ({total, paginate}) => {
       };
     return(
         <>
-          <Pagination total={total} pageSize={40} itemRender={itemRender} />
+          <Pagination total={4040} pageSize={40} itemRender={itemRender} />
         </>
       );
 } 
