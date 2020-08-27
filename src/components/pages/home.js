@@ -80,11 +80,11 @@ const Home = () => {
                             
                             <p className="about-txt">
                                 This edition will take place in Colorado at the foot of the Rocky Mountains. 
-                                While you are here feel free to explore our website by viewing photos, see list of this year's rider, track your favourite riders position on our map 
-                                and don't forget to participate in the slogan contest as we countdown to this year's Boulder Bike Tour.
+                                While you are here feel free to explore our website, view photos, see list of riders, track your favourite riders position on our map 
+                                and don't forget to participate in the slogan contest as we countdown to this edition of Boulder Bike Tour.
                             </p>
                             <p className="about-txt">
-                                To participate in the contest kindly suggest a cool slogan for this year's Boulder Bike Tour and stand a chance to win something nice from the organizers. 
+                                To participate in the contest kindly suggest a cool slogan and stand a chance to win something nice from the organizers. 
                                 <span> Click <Link to="/contest">here</Link> to submit your slogan suggestions.</span>
                             </p>
                             </div>

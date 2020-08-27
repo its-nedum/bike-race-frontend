@@ -11,7 +11,7 @@ const Riders = () => {
                 </div>
             </div>
             <div className="container-fluid">
-            <h3 className="rider-title">Meet our riders for this year's edition</h3>
+            <h3 className="rider-title">Meet our riders for this edition</h3>
                 <div className="row mt-3">
                     <div className="col-sm-12 col-md-7">
                     <div className="table-responsive">
