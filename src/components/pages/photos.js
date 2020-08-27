@@ -29,6 +29,7 @@ const Photos = () => {
             const { total, photo } = response.data.photos;
             setPhotos(photo);
             settotalPhotos(total)
+            console.log(photo)
         }).catch((err) => {
             console.log(err)
         });
