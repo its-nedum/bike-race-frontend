@@ -15,8 +15,8 @@ const Images = ({ photos }) => {
                                 <img src={`https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_c.jpg`} alt="pix" className="img-fluid" />
                             <div className="d-flex flex-column justify-content-end card-img-overlay">
                                 <div className="ml-1 p-2 photo-info" style={shape}>
-                                    <h6 className="card-text">Title: {photo.title}</h6>
-                                    <p className="card-text">Owner: {photo.ownername}</p>
+                                    <h6 className="card-text"><strong>Title:</strong> {photo.title}</h6>
+                                    <p className="card-text"><strong>Owner:</strong> {photo.ownername}</p>
                                 </div>
                             </div>
                             </div>
