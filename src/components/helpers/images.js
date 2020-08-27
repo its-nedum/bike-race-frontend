@@ -1,7 +1,8 @@
 import React from 'react'
 import Spinner from './spinner'
 const shape = {
-    borderLeft: '8px solid green'
+    borderLeft: '8px solid #743778',
+    backgroundColor: '#EFB1C8'
 }
 const Images = ({ photos }) => {
     return (
@@ -13,9 +14,9 @@ const Images = ({ photos }) => {
                             <div className="col-sm-12 col-md-3 mb-3 card" key={photo.id}>
                                 <img src={`https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_c.jpg`} alt="pix" className="img-fluid" />
                             <div className="d-flex flex-column justify-content-end card-img-overlay">
-                                <div className="ml-1 p-2 bg-white" style={shape}>
-                                    <p className="card-text">{photo.ownername}</p>
-                                    <p className="card-text">{photo.title}</p>
+                                <div className="ml-1 p-2 photo-info" style={shape}>
+                                    <h6 className="card-text">Title: {photo.title}</h6>
+                                    <p className="card-text">Owner: {photo.ownername}</p>
                                 </div>
                             </div>
                             </div>
