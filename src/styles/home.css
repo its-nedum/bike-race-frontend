@@ -22,7 +22,14 @@
 
 .start-date .card-title {
     margin-top: 20px;
-    margin-left: 75px;
+    /* margin-left: 75px; */
+}
+
+@media (max-width: 809px) {
+    .start-date .card-title {
+        margin-top: 20px;
+        margin-left: 70px;
+    }
 }
 
 .count-down-timer {
