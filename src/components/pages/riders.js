@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../styles/riders.css'
 import bike from '../../images/b1.jpg'
+import Footer from '../layouts/footer'
 
 const Riders = () => {
     return (
@@ -154,6 +155,7 @@ const Riders = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

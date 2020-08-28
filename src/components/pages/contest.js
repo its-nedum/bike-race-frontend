@@ -4,6 +4,7 @@ import '../../styles/contest.css'
 import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from '../layouts/footer'
 
 const Contest = () => {
     // success and error message
@@ -157,6 +158,7 @@ const Contest = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

@@ -3,6 +3,7 @@ import Images from '../helpers/images.js'
 import axios from 'axios'
 import '../../styles/photos.css'
 import Pagination from '../helpers/pagination'
+import Footer from '../layouts/footer'
 
 const Photos = () => {
     const [photos, setPhotos] = useState([]);
@@ -60,6 +61,7 @@ const Photos = () => {
                     <Pagination total={parseInt(totalPhotos)} paginate={paginate} />
                 : null }
             </div>
+            <Footer />
         </div>
     )
 }

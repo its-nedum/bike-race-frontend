@@ -23,7 +23,6 @@ function App() {
           <Route path='/contest' component={Contest} />
           <Route path='/submissions' component={Slogan} />
         </Switch>
-        <Footer />
       </div>
     </BrowserRouter>
   );

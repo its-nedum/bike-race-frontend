@@ -1,6 +1,8 @@
 import React from 'react'
 import '../../styles/locations.css'
 import Maps from '../helpers/map'
+import Footer from '../layouts/footer'
+
 const Locations = () => {
     return (
         <div>
@@ -17,6 +19,7 @@ const Locations = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
