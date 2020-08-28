@@ -30,13 +30,13 @@ const Slogans = () => {
 
     return (
         
-        <div>
+        <div className="">
             <div className="card contest-card">
                 <div className="card-body">
                     <h3>Here is a list of submissions for the slogan contest</h3>
                 </div>
             </div>
-            <div className="container">
+            <div className="container submissions-page">
                 <div className="row mt-4">
                 <ToastContainer />    
                     <div className="col-sm-12">

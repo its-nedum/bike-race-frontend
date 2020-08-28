@@ -24,3 +24,7 @@
 .submission-link a:hover {
     text-decoration: none;
 }
+
+.submissions-page {
+    height: 50vh;
+}
