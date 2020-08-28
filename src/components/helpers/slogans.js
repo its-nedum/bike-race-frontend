@@ -32,7 +32,7 @@ const Slogans = () => {
         
         <div className="">
             <div className="card contest-card">
-                <div className="card-body">
+                <div className="card-body heading-txt">
                     <h3>Here is a list of submissions for the slogan contest</h3>
                 </div>
             </div>

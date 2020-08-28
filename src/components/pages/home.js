@@ -9,7 +9,7 @@ const Home = () => {
             <div className="welcome-banner">
                 <div className="card">
                     <div className="card-body">
-                        <div className="card-title">
+                        <div className="card-title heading-txt">
                         <h5>The city of Boulder, Colorado <i>presents</i> </h5>
                         <h2>Boulder Bike Tour 2021 Edition</h2>
                         </div>

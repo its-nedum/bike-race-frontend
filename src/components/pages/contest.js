@@ -97,7 +97,7 @@ const Contest = () => {
     return (
         <div>
             <div className="card contest-card">
-                <div className="card-body">
+                <div className="card-body heading-txt">
                     <h3>It is the contest that delight us, and not the victory ~ Blaise Pascal</h3>
                 </div>
             </div>

@@ -7,7 +7,7 @@ const Riders = () => {
     return (
         <div>
             <div className="card riders-card">
-                <div className="card-body">
+                <div className="card-body heading-txt">
                     <h3>We know what we are, but not what we may be ~ Anonymous</h3>
                 </div>
             </div>

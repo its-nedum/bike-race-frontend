@@ -7,7 +7,7 @@ const Locations = () => {
     return (
         <div>
             <div className="card locations-card">
-                <div className="card-body">
+                <div className="card-body heading-txt">
                     <h3>A journey of a thousand miles begins with a single step ~ Lao Tzu</h3>
                 </div>
             </div>

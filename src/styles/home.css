@@ -72,3 +72,9 @@ hr {
     height: 100vh;
     background-size: 100% 100%;
 }
+
+@media screen and (max-width: 767px){
+    .heading-txt h2, h3, h5 {
+        font-size: 1rem;
+    }
+}
