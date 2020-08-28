@@ -24,6 +24,7 @@ footer {
 
 .explore-links li {
     list-style-type: none;
+    text-align: center;
 }
 
 .explore-links li a{
