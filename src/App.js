@@ -7,7 +7,6 @@ import Locations from './components/pages/locations';
 import Riders from './components/pages/riders';
 import Contest from './components/pages/contest';
 import Navbar from './components/layouts/navbar';
-import Footer from './components/layouts/footer';
 import Slogan from './components/helpers/slogans'
 
 function App() {

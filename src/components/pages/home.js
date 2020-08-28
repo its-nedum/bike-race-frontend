@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/home.css'
 import Timer from '../helpers/timer'
 import { Link } from 'react-router-dom'
+import Footer from '../layouts/homeFooter'
 
 const Home = () => {
     return (
@@ -17,9 +18,10 @@ const Home = () => {
                 </div>   
             </div>
 
-            <div className=" bg-home">
+            <div className="bg-home">
                 
-            </div>  
+            </div> 
+            <Footer /> 
         </div>
     )
 }
