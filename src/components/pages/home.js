@@ -19,7 +19,7 @@ const Home = () => {
             </div>
 
             <div className="bg-home">
-                
+                <Timer />
             </div> 
             <Footer /> 
         </div>
