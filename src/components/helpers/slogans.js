@@ -3,6 +3,7 @@ import axios from 'axios'
 import Spinner from './spinner'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from '../layouts/footer'
 
 const Slogans = () => {
     const successMsg = () => toast.success("Submissions loaded successfully!");
@@ -72,6 +73,7 @@ const Slogans = () => {
                     
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
