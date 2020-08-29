@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import '../../styles/navbar.css'
 
 const Navbar = () => {
@@ -12,20 +12,20 @@ const Navbar = () => {
 
             <div className="collapse navbar-collapse text-center justify-content-center" id="navbarSupportedContent">
                 <ul className="navbar-nav">
-                <li className="nav-item active">
-                    <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+                <li className="nav-item">
+                    <NavLink className="nav-link" activeClassName="selected" to="/">Home</NavLink>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/photos">Photos</Link>
+                    <NavLink className="nav-link" activeClassName="selected" to="/photos">Photos</NavLink>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/locations">Locations</Link>
+                    <NavLink className="nav-link" activeClassName="selected" to="/locations">Locations</NavLink>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/riders">Riders</Link>
+                    <NavLink className="nav-link" activeClassName="selected" to="/riders">Riders</NavLink>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/contest">Contest</Link>
+                    <NavLink className="nav-link" activeClassName="selected" to="/contest">Contest</NavLink>
                 </li>
                 </ul>
             </div>
