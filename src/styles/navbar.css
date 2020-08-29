@@ -12,5 +12,6 @@ nav {
 }
 
 .selected {
-    color: #EFB1C8 !important;
+    border-bottom: #EFB1C8 1px solid;
+    padding-bottom: 0px;
 }
