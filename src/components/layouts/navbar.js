@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className="collapse navbar-collapse text-center justify-content-center" id="navbarSupportedContent">
                 <ul className="navbar-nav">
                 <li className="nav-item">
-                    <NavLink className="nav-link" activeClassName="selected" to="/home">Home</NavLink>
+                    <NavLink className="nav-link" activeClassName="selected" exact to="/">Home</NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink className="nav-link" activeClassName="selected" to="/photos">Photos</NavLink>

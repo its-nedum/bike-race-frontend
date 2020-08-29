@@ -13,5 +13,13 @@ nav {
 
 .selected {
     border-bottom: #EFB1C8 1px solid;
-    padding-bottom: 0px;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 991px){
+    .selected {
+        border-bottom: none;
+        padding-bottom: 5px;
+        color: #EFB1C8 !important;
+    }
 }

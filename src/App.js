@@ -15,7 +15,7 @@ function App() {
       <div className="App cover_img">
         <Navbar />
         <Switch>
-          <Route exact path='/home' component={Home} />
+          <Route exact path='/' component={Home} />
           <Route path='/photos' component={Photos} />
           <Route path='/locations' component={Locations} />
           <Route path='/riders' component={Riders} />
