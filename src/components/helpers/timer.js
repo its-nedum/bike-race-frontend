@@ -15,16 +15,9 @@ const Timer = () => {
 
         interval = setInterval(() => {
             const now = new Date().getTime();
-            const distance = countdownDate - now;
+            const timeDifference = countdownDate - now;
 
-            // const days = Math.round(distance / (1000 * 60 * 60 * 24));
-            // const hours = Math.round(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
-            // const minutes = Math.round((distance % (1000 * 60 * 60)) /(1000 * 60));
-            // const seconds = Math.round((distance % (1000 * 60)) / 1000);
-            // const months = Math.round(days / 30.458);
-            
-
-            let seconds = Math.floor(distance / 1000) 
+            let seconds = Math.floor(timeDifference / 1000) 
             let minutes = Math.floor(seconds / 60)
             let hours = Math.floor(minutes / 60)
             const totalDays = Math.floor(hours / 24)
@@ -32,14 +25,14 @@ const Timer = () => {
             hours %= 24
             minutes %= 60
             seconds %= 60
-
+            
             const date = new Date();
             const time = new Date(date.getTime());
             time.setMonth(date.getMonth() + 1);
             time.setDate(0);
-            const days =time.getDate() > date.getDate() ? time.getDate() - date.getDate() : 0;
-
-            if (distance < 0){
+            const days = time.getDate() > date.getDate() ? time.getDate() - date.getDate() : 0;
+            
+            if (timeDifference < 0){
                 // stop our timer
                 clearInterval(interval.current)
             } else {
