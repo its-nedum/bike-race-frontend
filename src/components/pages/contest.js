@@ -122,7 +122,7 @@ const Contest = () => {
                                 <div className="input-group-prepend">
                                     <span className="input-group-text" id="basic-addon1"><span className="fas fa-user-circle"></span></span>
                                 </div>
-                            <input type="text" className="form-control" placeholder="Last Name" aria-label="lastname" value={lastname} onChange={e => setLastname(e.target.value)} aria-describedby="basic-addon1" required/>
+                            <input type="text" className="form-control" placeholder="Last Name" aria-label="lastname" maxLength="15" value={lastname} onChange={e => setLastname(e.target.value)} aria-describedby="basic-addon1" required/>
                             </div>
                         </div>
                         <div className="row">
