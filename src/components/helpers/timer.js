@@ -11,27 +11,31 @@ const Timer = () => {
     let interval = useRef();
 
     const startTimer = () => {
-        const countdownDate = new Date('April 1, 2021 00:00:00').getTime();
+        // Set the start date we're counting down to
+        const futureDate = new Date('April 1, 2021 00:00:00').getTime();
 
+        // Update the count down every one second
         interval = setInterval(() => {
+            // Get today's date and time
             const now = new Date().getTime();
-            const timeDifference = countdownDate - now;
+            // Get the time difference between now and the future date
+            const timeDifference = futureDate - now;
 
-            let seconds = Math.floor(timeDifference / 1000) 
-            let minutes = Math.floor(seconds / 60)
-            let hours = Math.floor(minutes / 60)
-            const totalDays = Math.floor(hours / 24)
+            // Time calculations for months, hours, minutes and seconds
+            const totalDays = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
             const months = Math.floor(totalDays / 30.458);
-            hours %= 24
-            minutes %= 60
-            seconds %= 60
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
             
+            // Calculating the remaining number of days in the current month
             const date = new Date();
             const time = new Date(date.getTime());
             time.setMonth(date.getMonth() + 1);
             time.setDate(0);
             const days = time.getDate() > date.getDate() ? time.getDate() - date.getDate() : 0;
             
+            // If the count down is completed clear interval else update the timer
             if (timeDifference < 0){
                 // stop our timer
                 clearInterval(interval.current)
