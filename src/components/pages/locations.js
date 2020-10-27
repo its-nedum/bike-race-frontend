@@ -11,7 +11,7 @@ const Locations = () => {
                     <h3>A journey of a thousand miles begins with a single step ~ Lao Tzu</h3>
                 </div>
             </div>
-            <div className="container-fluid">
+            <div className="container-fluid mb-4">
                 <h3 className="rider-title">Keep track of your favorite riders on the go</h3>
                 <div className="row">
                     <div className="col-sm-12 mt-4">

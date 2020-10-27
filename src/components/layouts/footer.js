@@ -4,12 +4,12 @@ import '../../styles/footer.css'
 
 const Footer = () => {
     return (
-        <footer className="mt-5">
+        <footer className="">
             <div className="footer-menu">
                 <div className="container">
                         <div className="row">
                             <div className="col-sm-12 col-md-4">
-                                <h4>Boulder Bike Tour</h4>
+                                <h4>About Us</h4>
                                 <p className="about-text">The Boulder Bike Tour is a bike racing competition that takes place in Boulder, Colorado at the foot of the Rocky Mountains once every decade.</p>
                             </div>
                             <div className="col-sm-12 col-md-4">

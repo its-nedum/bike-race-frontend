@@ -55,7 +55,7 @@ const Photos = () => {
                 </div>
             </div>
 
-            <div className="container-fluid">
+            <div className="container-fluid mb-4">
                 <Images photos={photos} />
                 { photos.length !== 0 ? 
                     <Pagination total={parseInt(totalPhotos)} paginate={paginate} />

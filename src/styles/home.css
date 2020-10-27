@@ -14,58 +14,6 @@
     text-transform: uppercase;
 }
 
-.start-date {
-    background-color: #EFB1C8;
-    height: 80px;
-    text-align: center;
-}
-
-.start-date .card-title {
-    margin-top: 20px;
-    /* margin-left: 75px; */
-}
-
-@media (max-width: 809px) {
-    .start-date .card-title {
-        margin-top: 20px;
-        margin-left: 70px;
-    }
-}
-
-.count-down-timer {
-    background-color: #743778;
-}
-
-.about-banner .card {
-    background-color: rgba(0,0,0,0.6);
-    margin: 30px 0px 30px 0px;
-    color: #fff;
-    text-align: justify;
-}
-
-.standout-text{
-    font-weight: 600;
-}
-.imgz {
-    max-width: 100%;
-    height: auto;
-}
-
-hr {
-    background-color: #fff;
-}
-
-.about-txt {
-    text-align: justify;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.1rem;
-}
-
-.about-heading {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-}
-
 .bg-home {
     background-image: url('../images/bg-home.jpg');
     width: 100%;

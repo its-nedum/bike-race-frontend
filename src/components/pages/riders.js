@@ -11,7 +11,7 @@ const Riders = () => {
                     <h3>We know what we are, but not what we may be ~ Anonymous</h3>
                 </div>
             </div>
-            <div className="container-fluid">
+            <div className="container-fluid mb-4">
             <h3 className="rider-title">Meet our riders for this edition</h3>
                 <div className="row mt-3">
                     <div className="col-sm-12 col-md-7">

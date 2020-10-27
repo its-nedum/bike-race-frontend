@@ -101,6 +101,7 @@ const Contest = () => {
                     <h3>It is the contest that delight us, and not the victory ~ Blaise Pascal</h3>
                 </div>
             </div>
+        <div className="bg-contest">
             <div className="container">
                 <div className="row">
                     <div className="col-md-3"></div>
@@ -157,6 +158,7 @@ const Contest = () => {
                         <Link to="/submissions" className="">View Submissions</Link>
                     </div>
                 </div>
+            </div>
             </div>
             <Footer />
         </div>

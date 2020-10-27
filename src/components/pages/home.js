@@ -1,7 +1,8 @@
 import React from 'react'
 import '../../styles/home.css'
+import Highlights from '../helpers/highlights'
 import Timer from '../helpers/timer'
-import Footer from '../layouts/homeFooter'
+import Footer from '../layouts/footer'
 
 const Home = () => {
     return (
@@ -20,6 +21,11 @@ const Home = () => {
             <div className="bg-home">
                 <Timer />
             </div> 
+
+            <div className="bg-highlight">
+                <Highlights />
+            </div>
+
             <Footer /> 
         </div>
     )
