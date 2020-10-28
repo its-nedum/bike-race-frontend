@@ -8,6 +8,7 @@ const Timer = () => {
     const [timerMinutes, setTimerMinutes] = useState('00')
     const [timerSeconds, setTimerSeconds] = useState('00')
 
+    // create interval at which timer will be updating
     let interval = useRef();
 
     const startTimer = () => {
