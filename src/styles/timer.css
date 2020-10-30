@@ -38,3 +38,13 @@ section p:first-child, .timer div:last-child span {
         padding: 3em 1em;
     }
 }
+
+.completed {
+    color: #fff;
+    display: flex;
+    flex: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
