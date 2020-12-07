@@ -1,3 +1,44 @@
+# Boulder Bike Tour - Frontend
+
+This is a React Frontend for the prestigious bike racing competition (Boulder Bike Tour) and also project 7 of Openclassrooms full-stack developer path.
+
+* Backend API: [https://github.com/its-nedum/bike-race-backend](https://github.com/its-nedum/bike-race-backend)
+
+## Demo Link
+Access the site at [Boulder Bike Tour](https://boulderbike-tour.herokuapp.com)
+
+## Pages
+- Home
+- Photos
+- Locations
+- Riders
+- Contest
+
+## Installation
+
+Clone repo to your local machine:
+
+```git
+git clone https://github.com/its-nedum/bike-race-frontend.git
+```
+move into project folder
+```
+cd bike-race-frontend
+```
+### Install dependencies and run locally
+
+install dependencies
+```
+    yarn install
+```
+
+Now start the React server:
+
+```
+    yarn start
+```
+
+# Project Brief
 Once every decade, an exciting, prestigious, and inspiring bike race takes place in Colorado at the foot of the Rocky Mountains. It's the Boulder Bike Tour, and it's coming up in 2020! The huge hype around the event means it's time to start preparing the whole event now. The organizers need a website for the event and have launched a call for proposals, meaning you will be submitting your idea for the bike tour's site!
 Requirements
 
