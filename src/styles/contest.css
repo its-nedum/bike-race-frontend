@@ -26,7 +26,7 @@
 }
 
 .submissions-page {
-    height: 50vh;
+    min-height: 100vh;
 }
 
 .bg-contest {
